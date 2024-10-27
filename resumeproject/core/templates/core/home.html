@@ -1,0 +1,31 @@
+{% extends 'core/base.html'%} {% load static %} {% block content %}
+<div class="mt-5">
+  <div class="text-center">
+    <img
+      src="{% static 'core/images/pic1.jpg'%}"
+      alt="ProfilePic"
+      class="img-thumbnail"
+      width="250px"
+      height="150px"
+    />
+  </div>
+  <div class="mt-5 text-white mx-5 text-justify">
+    <h1 class="font-weight-bold st-font">Hello, </h1>
+    <div class="px-4" style="line-height: 2rem;">
+    <p style="text-indent: 100px;">
+      I am <b class="text-warning">Harshad Mehta</b>, a Full-Stack web developer with 5 years of experience in global business. I am a dynamic and results-driven professional with a proven track record in [industry or field, e.g., marketing, software development], specializing in [specific skill or area, e.g., digital strategy, backend development, project management]. Known for blending strategic vision with hands-on execution to achieve business goals and enhance operational efficiency. Skilled in [list 2-3 core skills, e.g., data analysis, client relations, and team leadership], with a demonstrated ability to thrive in fast-paced environments. Recognized for effective communication, adaptability, and a commitment to continuous learning, contributing to team success and growth in challenging projects.
+    </p>
+    <p>
+      Dedicated and motivated, I hold a Bachelor’s degree in Artificial Intelligence and Data Science from <b class="text-warning">MMIT</b>, a premier educational institution committed to delivering high-quality technical and managerial education. Located in [Location, if applicable], MMIT offers a range of undergraduate and postgraduate programs, including engineering, management, and computer applications. Known for its state-of-the-art infrastructure and highly qualified faculty, the college emphasizes a practical, industry-oriented approach to learning. MMIT prioritizes holistic student development through a balanced focus on academics, hands-on projects, and extracurricular activities. With robust campus placement support and strong industry partnerships, MMIT prepares students to excel in their careers by equipping them with relevant skills, knowledge, and a professional mindset, making it a sought-after destination for aspiring professionals.
+    </p>
+  </div>
+</div>
+  
+  </div>
+  <div class="text-center">
+  <a href="{% url 'contact' %}" class="btn btn-outline-warning my-3 mr-5 ">Hire Me</a>
+  <a href="{% url 'contact' %}" class="btn btn-outline-info my-3">Contact</a>
+</div>
+</div>
+
+{% endblock content%}
